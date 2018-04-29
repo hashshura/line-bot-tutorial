@@ -11,5 +11,5 @@ A multifunctional LINE@-bot that is able to fetch random photos from an Instagra
 
 ### Tips
 
-Another way to deploy to Heroku is by using Heroku CLI. The tutorial can be found [here](https://devcenter.heroku.com/articles/heroku-cli).
-To see the bot in action, add @blo0465t (Practice Bot) as friends in LINE Messenger.
+* Another way to deploy to Heroku is by using Heroku CLI. The tutorial can be found [here](https://devcenter.heroku.com/articles/heroku-cli).
+* To see the bot in action, add @blo0465t (Practice Bot) as friends in LINE Messenger.
