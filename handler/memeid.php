@@ -21,7 +21,7 @@ function memeid($query, $userId){
 		$generatorID = $json['result'][0]['generatorID'];
 		
 		if ($generatorID == null){
-			$result = new TextMessageBuilder('GeneratorID tidak ditemukan.');
+			$result = new TextMessageBuilder('GeneratorID not found.');
 		} else {
 			$result = new TextMessageBuilder('GeneratorID: ' . $generatorID);
 		}
