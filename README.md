@@ -4,7 +4,11 @@ A multifunctional LINE@-bot that is able to fetch random photos from an Instagra
 
 ### How-to
 
-* Install Messaging API for your LINE@ account. See [here](https://blog.ashura.id/membuat-line-messenger-bot-part-1/).
-* Another way to deploy to Heroku is by using Heroku CLI. The tutorial can be found [here](https://devcenter.heroku.com/articles/heroku-cli).
 * Put your channel access token and channel secret to the .env file in \env directory.
-* Edit the YOUR_FIREBASE_PROJECT_ID (line 71) in index.php and handler/post.php.
+* Edit YOUR_FIREBASE_PROJECT_ID in index.php (line 71) and handler/post.php (line 5).
+* Edit YOUR_MEMEGENERATOR_API_KEY in handler/memeid.php (line 8) and handler/meme.php (line 9).
+* Install Messaging API for your LINE@ account and deploy to Heroku. See [here](https://blog.ashura.id/membuat-line-messenger-bot-part-1/).
+
+### Tips
+
+Another way to deploy to Heroku is by using Heroku CLI. The tutorial can be found [here](https://devcenter.heroku.com/articles/heroku-cli).
