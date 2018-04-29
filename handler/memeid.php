@@ -5,7 +5,7 @@ use \LINE\LINEBot\MessageBuilder\TextMessageBuilder as TextMessageBuilder;
 function memeid($query, $userId){
 	
 	$URL = 'http://version1.api.memegenerator.net/Generators_Search';
-	$apiKey = '76ceb024-cc96-45a8-9ac4-6b4e33b3f156';
+	$apiKey = 'YOUR_MEMEGENERATOR_API_KEY';
 	
 	if ($query == null){
 		$result = new TextMessageBuilder("Meme Generator\n\nUsage:\n/memeid query\n/meme memeid topText|bottomText\n\nExample:\n/memeid One Does Not Simply\n/meme 689854 one does not simply|make memes using line messenger");
