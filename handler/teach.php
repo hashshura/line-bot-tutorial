@@ -10,8 +10,7 @@ function teach($query, $userId){
 	} else {
 		
 		if ($query == null){
-			$result = new TextMessageBuilder("Teach Me Words\n\n/teach [word] [answer*]
-											\n\n*if not included means delete [word]");
+			$result = new TextMessageBuilder("Teach Me Words\n\n/teach [word] [answer*]\n\n*if not included means delete [word]");
 		} else {
 
 			$querySplit = explode(' ', $query, 2);
