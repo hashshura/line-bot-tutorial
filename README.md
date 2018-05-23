@@ -4,6 +4,13 @@ A multifunctional LINE@-bot that is able to fetch random photos from an Instagra
 
 ### How-to
 
+* Create a new "env" folder (line-bot-tutorial\env).
+* Create a .env file with the following as inside:
+```
+CHANNEL_ACCESS_TOKEN="YOUR_CHANNEL_ACCESS_TOKEN"
+CHANNEL_SECRET="YOUR_CHANNEL_SECRET"
+PASS_SIGNATURE=true
+```
 * Put your channel access token and channel secret to the .env file in \env directory.
 * Edit YOUR_FIREBASE_PROJECT_ID in index.php (line 71) and handler/post.php (line 5).
 * Edit YOUR_MEMEGENERATOR_API_KEY in handler/memeid.php (line 8) and handler/meme.php (line 9).
