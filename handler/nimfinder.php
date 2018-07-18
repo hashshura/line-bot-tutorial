@@ -4,11 +4,11 @@ use \LINE\LINEBot\MessageBuilder\TextMessageBuilder as TextMessageBuilder;
 
 function nim($query, $userId){
 	
-	if ($query == null){
-		$result = new TextMessageBuilder("ITB NIM Finder\nUsage:\n/nim [name] [page*]\n/nim [nim]\n\nExample:\n/nim asif\n/nim hummam rais 2\n/nim 16517222");
-	} else {
-		
-		$page = 1;
+    if ($query == null){
+        $result = new TextMessageBuilder("ITB NIM Finder\nUsage:\n/nim [name] [page*]\n/nim [nim]\n\nExample:\n/nim asif\n/nim hummam rais 2\n/nim 16517222");
+    } else {
+        
+        $page = 1;
         preg_match_all('!\d+!', $query, $nums);
         $nums = $nums[0];
         
@@ -44,9 +44,9 @@ function nim($query, $userId){
         }
         
         $result = new TextMessageBuilder($result);
-		
-	}
-	
-	return $result;
-	
+        
+    }
+
+    return $result;
+
 }
