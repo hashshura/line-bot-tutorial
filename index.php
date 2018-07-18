@@ -60,7 +60,7 @@ $app->post('/', function ($request, $response)
 					if ( function_exists( $inputSplit[0] ) ){
 						$outputMessage = $inputSplit[0]( $inputSplit[1], $userId );
 					} else {
-						$outputMessage = new TextMessageBuilder('List of available commands: aboutme, instagram, calculate, meme, memeid, xkcd');
+						$outputMessage = new TextMessageBuilder('List of available commands: aboutme, instagram, calculate, meme, memeid, xkcd, nim');
 					}
 
 					$result = $bot->replyMessage($event['replyToken'], $outputMessage);
@@ -68,7 +68,7 @@ $app->post('/', function ($request, $response)
 					
 				} else {
 					
-					$wordsLearned = file_get_contents('https://YOUR_FIREBASE_PROJECT_ID.firebaseio.com/words.json');
+					$wordsLearned = file_get_contents('https://linebotdatabase.firebaseio.com/words.json');
 					$wordsLearned = json_decode($wordsLearned, true);
 					
 					foreach ($wordsLearned as $word => $answer){

@@ -4,8 +4,8 @@ use \LINE\LINEBot\MessageBuilder\TextMessageBuilder as TextMessageBuilder;
 
 function nim($query, $userId){
 	
-	if ($userName == null){
-		$result = new TextMessageBuilder("ITB NIM Finder\nUsage:\n.nim [name] [page*]\n.nim [nim]\n\nExample:\n.nim asif\n.nim hummam rais 2\n.nim 16517222')");
+	if ($query == null){
+		$result = new TextMessageBuilder("ITB NIM Finder\nUsage:\n/nim [name] [page*]\n/nim [nim]\n\nExample:\n/nim asif\n/nim hummam rais 2\n/nim 16517222");
 	} else {
 		
 		$page = 1;
@@ -37,7 +37,7 @@ function nim($query, $userId){
                 $result .= "\n\n" . $result['name'] . "\n";
                 $result .= $result['nimF'] . ' ' . $result['nimS'];
             }
-            $result .= "\n\n" . "Halaman selanjutnya:\n.nim " . $input . " " . ($page+1);
+            $result .= "\n\n" . "Halaman selanjutnya:\n/nim " . $input . " " . ($page+1);
             
         } else {
             $result .= "\n" . "Tidak ditemukan.";
