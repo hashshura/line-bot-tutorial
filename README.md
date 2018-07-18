@@ -1,6 +1,6 @@
 # line-bot-tutorial
 
-A multifunctional LINE@-bot that is able to find the NIM (Nomor Induk Mahasiswa) of an ITB student based on their name or vice versa, fetch random photos from an Instagram user (regex and crawl), _be taught_ words and answer them based on the corresponding answers (Google Firebase), calculate simple mathematics expressions (MathJS API), generate memes (MemeGenerator API), and display random comics from xkcd.com (xkcd API).
+A multifunctional LINE@-bot that is able to [find[(https://ashura.id/nim) the NIM (Nomor Induk Mahasiswa) of an ITB student based on their name or vice versa, fetch random photos from an Instagram user (regex and crawl), _be taught_ words and answer them based on the corresponding answers (Google Firebase), calculate simple mathematics expressions (MathJS API), generate memes (MemeGenerator API), and display random comics from xkcd.com (xkcd API).
 
 Made with PHP, mainly to complement the LINE@ Messenger Bot Tutorial that can be found [on my blog](https://blog.ashura.id/category/line/).
 
