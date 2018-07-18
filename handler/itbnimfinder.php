@@ -33,9 +33,9 @@ function nim($query, $userId){
 
         if (isset($response)){
             
-            foreach ($response as $result) {
-                $result .= "\n\n" . $result['name'] . "\n";
-                $result .= $result['nimF'] . ' ' . $result['nimS'];
+            foreach ($response as $res) {
+                $result .= "\n\n" . $res['name'] . "\n";
+                $result .= $res['nimF'] . ' ' . $res['nimS'];
             }
             $result .= "\n\n" . "Halaman selanjutnya:\n/nim " . $input . " " . ($page+1);
             
