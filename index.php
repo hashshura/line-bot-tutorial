@@ -60,7 +60,20 @@ $app->post('/', function ($request, $response)
 					if ( function_exists( $inputSplit[0] ) ){
 						$outputMessage = $inputSplit[0]( $inputSplit[1], $userId );
 					} else {
-						$outputMessage = new TextMessageBuilder('List of available commands: aboutme, instagram, calculate, meme, memeid, xkcd, nim');
+						$cmds = '';
+						$ctr = 0;
+						foreach (glob("handler/*.php") as $handler){
+							if ($handler != 'handler/post.php'){
+								$ctr++;
+								$regex = '/handler\/(.*?).php/';
+								preg_match($regex, $handler, $result);
+								if ($ctr > 1){
+									$cmds .= ', ';
+								}
+								$cmds .= $result[1];
+							}
+						}
+						$outputMessage = new TextMessageBuilder('List of available commands: ' . $cmds);
 					}
 
 					$result = $bot->replyMessage($event['replyToken'], $outputMessage);
