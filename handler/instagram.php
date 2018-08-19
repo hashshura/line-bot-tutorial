@@ -3,13 +3,13 @@
 use \LINE\LINEBot\MessageBuilder\ImageMessageBuilder as ImageMessageBuilder;
 use \LINE\LINEBot\MessageBuilder\TextMessageBuilder as TextMessageBuilder;
 
-function instagram($userName, $userId){
+function instagram($query, $userId){
 	
-	if ($userName == null){
+	if ($query == null){
 		$result = new TextMessageBuilder("Instagram Random Photo\n\nUsage:\n/instagram userName\n\nExample:\n/instagram alrafikri");
 	} else {
 		
-		$URL = 'https://www.instagram.com/' . $userName;
+		$URL = 'https://www.instagram.com/' . $query;
 		$instagramHtmlCode = file_get_contents($URL);
 		$regex = '/"display_url":"(.*?)"/';
 		
