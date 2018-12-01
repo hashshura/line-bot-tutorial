@@ -4,7 +4,7 @@ A multifunctional LINE@-bot that is able to [find](https://ashura.id/nim) the NI
 
 Made with PHP, mainly to complement the LINE@ Messenger Bot Tutorial that can be found [on my blog](https://blog.ashura.id/category/line/).
 
-### How-to
+## How-to
 
 * Create a new "env" folder (line-bot-tutorial\env).
 * Create a .env file with the following as inside:
@@ -18,7 +18,7 @@ PASS_SIGNATURE=true
 * Edit YOUR_MEMEGENERATOR_API_KEY in handler/memeid.php (line 8) and handler/meme.php (line 9).
 * Install Messaging API for your LINE@ account and deploy to Heroku. See [here](https://blog.ashura.id/membuat-line-messenger-bot-part-1/).
 
-### Tips
+## Tips
 
 * Another way to deploy to Heroku is by using Heroku CLI. The tutorial can be found [here](https://devcenter.heroku.com/articles/heroku-cli).
 * To see the bot in action, add [@blo0465t](http://line.me/ti/p/~@blo0465t) (Practice Bot) as friends in LINE Messenger.
